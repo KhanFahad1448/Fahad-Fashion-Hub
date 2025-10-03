@@ -40,17 +40,40 @@ const Footer = () => {
         </div>
         {/* newsletter subscription */}
         <div>
-            <h3 className='text-xl font-semibold'>Stay in the Loop</h3>
-            <p className='mt-2 text-sm'>Subscribe to get special offers, free giveaways, and more</p>
-            <form action="" className='mt-4 flex'>
-                <input 
-                type="email" 
-                placeholder='Your email address'
-                className='w-full p-2 rounded-l-md bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500'
-                />
-                <button type='submit' className='bg-red-600 text-white px-4 rounded-r-md hover:bg-red-700'>Subscribe</button>
-            </form>
-        </div>
+  <h3 className="text-xl font-semibold">Stay in the Loop</h3>
+  <p className="mt-2 text-sm">
+    Subscribe to get special offers, free giveaways, and more
+  </p>
+
+  {/* Netlify form setup */}
+  <form 
+    name="newsletter" 
+    method="POST" 
+    data-netlify="true" 
+    className="mt-4 flex"
+  >
+    {/* Netlify needs this hidden input */}
+    <input type="hidden" name="form-name" value="newsletter" />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your email address"
+      className="w-full p-2 rounded-l-md bg-gray-800 text-gray-200 
+                 placeholder-gray-400 
+                 focus:outline-none focus:ring-2 focus:ring-red-500"
+      required
+    />
+    <button
+      type="submit"
+      className="bg-red-600 text-white px-4 rounded-r-md 
+                 hover:bg-red-700 focus:ring-2 focus:ring-red-500 
+                 transition-colors duration-200"
+    >
+      Subscribe
+    </button>
+  </form>
+</div>
       </div>
       {/* bottom section */}
       <div className='mt-8 border-t border-gray-700 pt-6 text-center text-sm'>

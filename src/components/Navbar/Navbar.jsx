@@ -20,16 +20,30 @@ const Navbar = () => {
         <Link to='/'> <img src={Logo} alt="" className='md:w-20 w-20'/></Link>
       
         <div className='flex items-center gap-5'>
-            <nav className='hidden md:block'>
-                <ul className='flex items-center font-semibold text-xl gap-7'>
-                    <Link to='/'><li>Home</li></Link>
-                    <Link to='/mens'><li>Mens</li></Link>
-                    <Link to='/womens'><li>Womens</li></Link>
-                    <Link to='/kids'><li>Kids</li></Link>
-                    <Link to='/login'><button className='bg-red-500 text-white px-4 py-1 rounded-md'>Login</button></Link>
-                    
-                </ul>
-            </nav>
+          <nav className="hidden md:block">
+           <ul className="flex items-center font-semibold text-xl gap-7">
+             <li>
+               <Link to="/" className="hover:text-[#1560BD]" >Home</Link>
+            </li>
+            <li>
+              <Link to="/mens" className="hover:text-[#1560BD]">Mens</Link>
+            </li>
+            <li>
+              <Link to="/womens" className="hover:text-[#1560BD]">Womens</Link>
+            </li>
+            <li>
+              <Link to="/kids" className="hover:text-[#1560BD]">Kids</Link>
+            </li>
+            <li>
+              <Link to="/login" >
+               <button className="bg-red-500 text-white px-4 py-1 rounded-md">
+                Login
+              </button>
+              </Link>
+            </li>
+           </ul>
+          </nav>
+
             <Link to='/cart' className='relative w-10'>
             <ShoppingCart/> 
             <div className='bg-red-500 w-5 absolute -top-2 right-1 flex items-center justify-center rounded-full text-white'>{getTotalCartItems()}</div>
