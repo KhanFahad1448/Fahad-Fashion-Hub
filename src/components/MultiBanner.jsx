@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MultiBanner = () => {
     return (
@@ -13,7 +14,9 @@ const MultiBanner = () => {
                     />
                     <div className='absolute inset-0 bg-gray-800 rounded-lg bg-opacity-50 flex flex-col items-center justify-center'>
                         <h2 className='text-white text-2xl font-bold'>New Arrivals</h2>
+                        <Link to="/new-collection">
                         <button className='mt-2 px-3 py-1 bg-white text-green-800 rounded-md shadow hover:bg-gray-200'>Discover</button>
+                        </Link>
                     </div>
                 </div>
                 {/* second banner */}
@@ -48,7 +51,7 @@ const MultiBanner = () => {
                     />
                     <div className='absolute inset-0 bg-orange-800 bg-opacity-50 flex flex-col items-center rounded-lg justify-center'>
                         <h2 className='text-white text-4xl font-bold'>Season Sale</h2>
-                        <p className='text-white my-2 text-lg'>Up to 70% Off</p>
+                        <p className='text-white my-2 text-lg'>Up to 50% Off</p>
                         <button className='text-white bg-red-500 px-3 py-2 hover:bg-red-600 rounded-md'>Shop Now</button>
                     </div>
                 </div>
@@ -72,7 +75,9 @@ const MultiBanner = () => {
                     />
                     <div className='absolute inset-0 bg-gray-800 rounded-lg bg-opacity-50 flex flex-col items-center justify-center'>
                         <h2 className='text-white text-2xl font-bold'>New Arrivals</h2>
+                        <Link to="/new-collection">
                         <button className='mt-2 px-3 py-1 bg-white text-green-800 rounded-md shadow hover:bg-gray-200'>Discover</button>
+                        </Link>
                     </div>
                 </div>
             </div>

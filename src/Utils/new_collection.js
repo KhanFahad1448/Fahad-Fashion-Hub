@@ -18,8 +18,8 @@ let new_collections = [
       image1: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/5/a5a0e2fTWN_TWDR710_2.jpg?rnd=20200526195200&tr=w-512',
       image2: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/5/a5a0e2fTWN_TWDR710_4.jpg?rnd=20200526195200&tr=w-512',
       image3: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/5/a5a0e2fTWN_TWDR710_5.jpg?rnd=20200526195200&tr=w-512',
-      new_price: 85.0,
-      old_price: 120.5,
+      new_price: 850.0,
+      old_price: 1220.5,
     },
     {
      id: 11,
@@ -40,8 +40,8 @@ let new_collections = [
       image1: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/4e9aa48TWN_TWENT00013335_2.jpg?rnd=20200526195200&tr=w-512',
       image2: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/4e9aa48TWN_TWENT00013335_4.jpg?rnd=20200526195200&tr=w-512',
       image3: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/4/e/4e9aa48TWN_TWENT00013335_5.jpg?rnd=20200526195200&tr=w-512',
-      new_price: 100.0,
-      old_price: 150.0,
+      new_price: 1300.0,
+      old_price: 2150.0,
     } 
     ];
     

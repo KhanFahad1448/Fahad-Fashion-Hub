@@ -9,6 +9,8 @@ import Login from './Pages/Login'
 import Cart from './Pages/Cart'
 import Footer from './components/Footer'
 import SingleProduct from './components/SingleProduct'
+import NewCollection from './components/NewCollection'
+import AllProducts from "./Pages/AllProducts";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
   {
     path: "/products/:productId",
     element: <><Navbar/><SingleProduct/><Footer/></>
+  },
+  {
+  path: "/new-collection",
+  element: <><Navbar/><NewCollection/><Footer/></>
+  },
+   {
+    path: "/products",
+    element: <><Navbar/><AllProducts/><Footer/></>
   }
 ])
 

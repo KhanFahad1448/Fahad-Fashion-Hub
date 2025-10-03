@@ -1,5 +1,6 @@
 import React from 'react'
 import banner from '../assets/HeroBanner.jpg'
+import { Link } from "react-router-dom";
 
 
 const HeroBanner = () => {
@@ -10,7 +11,9 @@ const HeroBanner = () => {
             <div className='text-center text-white px-4'>
                 <h1 className='text-3xl md:text-5xl lg:text-6xl font-bold mb-4'>Discover Your Style</h1>
                 <p className='text-lg md:text-xl mb-6'>Shop the latest trends and find your perfect look</p>
-                <a href='../all_product.js'><button className='bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-300'>Shop Now</button></a>
+                <Link to="/products">
+                <button className='bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-300'>Shop Now</button>
+                </Link>
             </div>
         </div>
       </div>

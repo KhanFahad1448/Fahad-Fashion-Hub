@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/BuisnessLogo.png'
 import { ShoppingCart } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
@@ -17,8 +17,8 @@ const Navbar = () => {
   return (
     <div className='bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-400'>
       <div className='max-w-7xl mx-auto py-2 px-5 flex justify-between items-center'>
-        <Link to='/'> <img src={Logo} alt="" className='md:w-24 w-20'/></Link>
-       
+        <Link to='/'> <img src={Logo} alt="" className='md:w-20 w-20'/></Link>
+      
         <div className='flex items-center gap-5'>
             <nav className='hidden md:block'>
                 <ul className='flex items-center font-semibold text-xl gap-7'>

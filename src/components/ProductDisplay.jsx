@@ -30,7 +30,7 @@ const ProductDisplay = ({ product }) => {
             .map((_, i) => (
               <Star key={i} fill={i < product.rating ? 'red' : 'gray'} />
             ))}
-          <p>({product.reviewsCount || 122})</p>
+          <p>({product.reviewsCount || 61})</p>
         </div>
 
         {/* Price */}

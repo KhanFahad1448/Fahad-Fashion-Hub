@@ -37,9 +37,9 @@ const Cart = () => {
                     <div className='text-gray-500 font-semibold text-sm sm:text-base grid grid-cols-2 sm:grid-cols-3 md:grid-cols-[0.5fr,2fr,1fr,1fr,1fr,1fr] items-center px-4 gap-2'>
                       <img src={e.image} className='h-16 w-16 object-cover' alt="product" />
                       <p>{e.name}</p>
-                      <p className='hidden md:block'>${e.new_price}</p>
+                      <p className='hidden md:block'>₹{e.new_price}</p>
                       <button className='w-16 h-12 bg-white border border-gray-300'>{cartItems[e.id]}</button>
-                      <p className='hidden md:block'>${e.new_price * cartItems[e.id]}</p>
+                      <p className='hidden md:block'>₹{e.new_price * cartItems[e.id]}</p>
                       <X onClick={() => { removeFromCart(e.id) }} className='cursor-pointer' />
                     </div>
                     <hr className='bg-gray-300 border-0 h-[2px] my-2' />
@@ -54,7 +54,7 @@ const Cart = () => {
                 <div>
                   <div className='flex justify-between py-2'>
                     <p>Subtotal</p>
-                    <p>${getTotalCartAmount()}</p>
+                    <p>₹{getTotalCartAmount()}</p>
                   </div>
                   <hr className='bg-gray-300 border-0 h-[2px] mt-2' />
                   <div className='flex justify-between py-2'>
@@ -64,7 +64,7 @@ const Cart = () => {
                   <hr className='bg-gray-300 border-0 h-[2px] my-2' />
                   <div className='flex justify-between text-xl font-semibold py-2'>
                     <h3>Total</h3>
-                    <h3>${getTotalCartAmount()}</h3>
+                    <h3>₹{getTotalCartAmount()}</h3>
                   </div>
                 </div>
                 <Link to='/login'>

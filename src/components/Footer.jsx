@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/BuisnessLogo.png'
 import { FaFacebook, FaInstagram,  FaTwitterSquare } from 'react-icons/fa'
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
             </Link>
             <p className='mt-2 text-sm'>High-quality, sustainable clothing at affordable prices.</p>
             <p className='mt-2 text-sm'>Hill View Road , Near Rahat Nursing Home, Bariatu Ranchi 09</p>
-            <p className='text-sm'>Email: support@clothify.com</p>
+            <p className='text-sm'>Email: support@FahadFashionHub.com</p>
             <p className='text-sm'>Phone: +91-8085509001</p>
         </div>
         {/* customer service link */}
@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
       {/* bottom section */}
       <div className='mt-8 border-t border-gray-700 pt-6 text-center text-sm'>
-        <p>&copy; {new Date().getFullYear()}<span className='text-red-500'>Clothify</span>.All rights reserved</p>
+        <p>&copy; {new Date().getFullYear()}<span className='text-red-500'>Fahad's Fashion Hub. </span>All rights reserved</p>
       </div>
     </footer>
   )
