@@ -40,39 +40,39 @@ const Footer = () => {
         </div>
         {/* newsletter subscription */}
         <div>
-  <h3 className="text-xl font-semibold">Stay in the Loop</h3>
-  <p className="mt-2 text-sm">
-    Subscribe to get special offers, free giveaways, and more
-  </p>
+            <h3 className="text-xl font-semibold">Stay in the Loop</h3>
+             <p className="mt-2 text-sm">
+             Subscribe to get special offers, free giveaways, and more
+            </p>
 
-  {/* Netlify form setup */}
-  <form 
-    name="newsletter" 
-    method="POST" 
-    data-netlify="true" 
-    className="mt-4 flex"
-  >
-    {/* Netlify needs this hidden input */}
-    <input type="hidden" name="form-name" value="newsletter" />
+          {/* Netlify form setup */}
+         <form 
+          name="newsletter" 
+          method="POST" 
+          data-netlify="true" 
+          className="mt-4 flex"
+           >
+         {/* Netlify needs this hidden input */}
+          <input type="hidden" name="form-name" value="newsletter" />
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Your email address"
-      className="w-full p-2 rounded-l-md bg-gray-800 text-gray-200 
+        <input
+         type="email"
+         name="email"
+         placeholder="Your email address"
+         className="w-full p-2 rounded-l-md bg-gray-800 text-gray-200 
                  placeholder-gray-400 
                  focus:outline-none focus:ring-2 focus:ring-red-500"
-      required
-    />
-    <button
-      type="submit"
-      className="bg-red-600 text-white px-4 rounded-r-md 
+         required
+        />
+        <button
+        type="submit"
+        className="bg-red-600 text-white px-4 rounded-r-md 
                  hover:bg-red-700 focus:ring-2 focus:ring-red-500 
                  transition-colors duration-200"
-    >
-      Subscribe
-    </button>
-  </form>
+         >
+         Subscribe
+       </button>
+     </form>
 </div>
       </div>
       {/* bottom section */}
