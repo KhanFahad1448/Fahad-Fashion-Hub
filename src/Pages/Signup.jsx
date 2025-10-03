@@ -1,10 +1,10 @@
 import { Eye, EyeOff } from 'lucide-react';
 import React, { useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../Firebase/firebase';
 import { useNavigate, Link } from 'react-router-dom';
 
-const Login = () => {
+const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -13,12 +13,12 @@ const Login = () => {
 
   const togglePassword = () => setShowPassword(!showPassword);
 
-  const handleLogin = async (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await createUserWithEmailAndPassword(auth, email, password);
       setError('');
-      navigate('/'); // redirect after login
+      navigate('/'); // redirect to home/dashboard after signup
     } catch (err) {
       setError(err.message);
     }
@@ -27,14 +27,15 @@ const Login = () => {
   return (
     <div className='flex items-center justify-center min-h-screen bg-gray-100 px-6 md:px-0'>
       <div className='w-full max-w-md p-8 space-y-4 bg-white shadow-lg rounded-xl'>
-        <h2 className='text-2xl font-bold text-center text-gray-800'>Login to Your Account</h2>
+        <h2 className='text-2xl font-bold text-center text-gray-800'>Create Your Account</h2>
 
-        {error && <p className='text-red-500 text-center'>{error}</p>}
+        {error && <p className="text-red-500 text-center">{error}</p>}
 
-        <form onSubmit={handleLogin} className='space-y-6'>
+        <form onSubmit={handleSignup} className='space-y-6'>
+          {/* Email */}
           <div>
             <label htmlFor="email" className='block mb-2 text-sm font-medium text-gray-600'>Email Address</label>
-            <input
+            <input 
               type="email"
               id='email'
               value={email}
@@ -45,11 +46,13 @@ const Login = () => {
             />
           </div>
 
+          {/* Password */}
           <div className='relative'>
             <label htmlFor="password" className='block mb-2 font-medium text-gray-600'>Password</label>
             <div className='flex items-center relative'>
-              <input
+              <input 
                 type={showPassword ? "text" : "password"}
+                id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder='Enter Your Password'
@@ -57,17 +60,18 @@ const Login = () => {
                 required
               />
               <button type='button' onClick={togglePassword} className='absolute inset-y-0 right-3 flex items-center text-gray-500 hover:text-gray-700'>
-                {showPassword ? <Eye className='w-5 h-5' /> : <EyeOff className='w-5 h-5' />}
+                {showPassword ? <Eye className='w-5 h-5'/> : <EyeOff className='w-5 h-5'/>}
               </button>
             </div>
           </div>
 
-          <button type='submit' className='w-full px-4 py-2 text-white bg-red-500 rounded-lg hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-300'>Login</button>
+          <button type='submit' className='w-full px-4 py-2 text-white bg-red-500 rounded-lg hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-300'>Sign Up</button>
         </form>
 
         <div className='text-center'>
           <p className='text-sm text-gray-600'>
-            Don't have an account? <Link to="/signup" className='text-red-500 hover:underline'>Sign up</Link>
+            Already have an account?{" "}
+            <Link to="/login" className='text-red-500 hover:underline'>Login</Link>
           </p>
         </div>
       </div>
@@ -75,4 +79,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
