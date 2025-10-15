@@ -1,34 +1,64 @@
-# React + Vite
+## Fahad Fashion Hub
+![Home Screenshot](./src/assets/home-screenshot.png)
 
+## Overview
 
-Fahad's Fashion Hub
-<p align="center"> <img src="https://raw.githubusercontent.com/KhanFahad1448/Fahad-Fashion-Hub/main/assets/Readme.FFH.png" width="100%"> </p>
+Fahad Fashion Hub is a modern e-commerce platform built with React and Vite, offering a seamless online shopping experience for fashion enthusiasts. Users can browse clothing for MEn, Women and Kids and  add items to their cart, and place orders.
 
-A modern e-commerce frontend built with React, Vite, and TailwindCSS, featuring Firebase authentication, global cart management via React Context, and Netlify newsletter integration.
+This project emphasizes mobile responsiveness, user authentication, and real-time data management with Firebase Firestore.
 
+## Features
 
-Currently, two official plugins are available:
+Browse Mens, Womens, and Kids Clothes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add to Cart and manage quantities
 
+Place Orders with Cash on Delivery or Razorpay payment
 
-Features
+User authentication and registration with Firebase Auth
 
-Fully responsive e-commerce UI
+Responsive design for mobile, tablet, and desktop
 
-Firebase authentication (Signup/Login)
+Interactive UI components with hover effects and animations
 
-Protected routes for Cart & Dashboard
+## Tech Stack
 
-Global cart management using React Context
+Frontend: React, Vite, Tailwind CSS, Lucide Icons
 
-Newsletter form integrated with Netlify
+Backend / Database: Firebase Firestore & Firebase Authentication
 
-TailwindCSS for styling
+Payment Gateway: Razorpay
 
-React Router v7 for routing
+Routing & State Management: React Router, React Context API
 
-Mobile-friendly responsive menu
+Notifications: react-hot-toast
 
-Easy to extend with new products or collections
+## Tools Used
+
+VS Code (IDE)
+
+Git & GitHub (Version Control)
+
+Chrome / Browser Dev Tools (Testing & Debugging)
+
+TailwindCSS (Styling)
+
+Firebase (Database & Authentication)
+
+## How to Use
+
+Open the app and browse products.
+
+Add products to the cart.
+
+Proceed to checkout (login required).
+
+Choose payment method (COD or Razorpay).
+
+Place order and get order confirmation.
+
+## How to Run
+
+npm install 
+
+npm run dev
