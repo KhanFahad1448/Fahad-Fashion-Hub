@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBZNYeGd1Oy6-jnz2kH38uYE7L3AGThxEM",
-  authDomain: "fahadfashionhub-8ea71.firebaseapp.com",
-  projectId: "fahadfashionhub-8ea71",
-  storageBucket: "fahadfashionhub-8ea71.appspot.com",
-  messagingSenderId: "373804706157",
-  appId: "1:373804706157:web:7b1cc3148f5599503ed264"
+ apiKey: "AIzaSyDzDz1sDy1GZVykhWO43uocV_6WdMmyv64",
+  authDomain: "fahad-fashion-hub.firebaseapp.com",
+  projectId: "fahad-fashion-hub",
+  storageBucket: "fahad-fashion-hub.firebasestorage.app",
+  messagingSenderId: "664214524471",
+  appId: "1:664214524471:web:00ac2451831e614958e5b2"
 };
 
 const app = initializeApp(firebaseConfig);

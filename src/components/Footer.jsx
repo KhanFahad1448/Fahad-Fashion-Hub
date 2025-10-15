@@ -12,10 +12,10 @@ const Footer = () => {
             <Link to='/'>
               <img src={Logo} alt="" className='w-32'/>
             </Link>
-            <p className='mt-2 text-sm'>High-quality, sustainable clothing at affordable prices.</p>
-            <p className='mt-2 text-sm'>Hill View Road , Near Rahat Nursing Home, Bariatu Ranchi 09</p>
-            <p className='text-sm'>Email: support@FahadFashionHub.com</p>
-            <p className='text-sm'>Phone: +91-8085509001</p>
+            <p className='mt-2 text-sm text-white'>High-quality, sustainable clothing at affordable prices.</p>
+            <p className='mt-2 text-sm text-white'>Hill View Road , Near Rahat Nursing Home, Bariatu Ranchi 09</p>
+            <p className='text-sm text-white'>Email: support@FahadFashionHub.com</p>
+            <p className='text-sm text-white'>Phone: +91-8085509001</p>
         </div>
         {/* customer service link */}
         <div className='mb-6 md:mb-0'>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         {/* social media links */}
         <div className='mb-6 md:mb-0'>
-            <h3 className='text-xl font-semibold'>Follow Us</h3>
+            <h3 className='text-xl font-semibold '>Follow Us</h3>
             <div className='flex space-x-4 mt-2'>
                 <FaFacebook/>
                 <FaInstagram/>
@@ -41,7 +41,7 @@ const Footer = () => {
         {/* newsletter subscription */}
         <div>
             <h3 className="text-xl font-semibold">Stay in the Loop</h3>
-             <p className="mt-2 text-sm">
+             <p className="mt-2 text-sm text-white">
              Subscribe to get special offers, free giveaways, and more
             </p>
 
@@ -76,8 +76,8 @@ const Footer = () => {
 </div>
       </div>
       {/* bottom section */}
-      <div className='mt-8 border-t border-gray-700 pt-6 text-center text-sm'>
-        <p>&copy; {new Date().getFullYear()}<span className='text-red-500'>Fahad's Fashion Hub. </span>All rights reserved</p>
+      <div className='mt-8 border-t border-gray-700 pt-6 text-center text-sm text-white'>
+        <p className='text-white'>&copy; {new Date().getFullYear()}<span className='text-red-500'>Fahad's Fashion Hub. </span>All rights reserved</p>
       </div>
     </footer>
   )

@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react'
-import { Shopcontext } from '../Context/ShopContext'
+import { Shopcontext } from '../../Context/ShopContext'
 import { useParams } from 'react-router-dom'
-import Breadcrum from './Breadcrum'
-import ProductDisplay from './ProductDisplay'
-import DescriptionBox from './DescriptionBox'
-import NewCollection from './NewCollection'
+import Breadcrum from '../Breadcrum'
+import ProductDisplay from "../Products/ProductDisplay"
+import DescriptionBox from '../DescriptionBox'
+import NewCollection from '../NewCollection'
 
 const SingleProduct = () => {
     const {all_product} = useContext(Shopcontext)
