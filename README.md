@@ -1,3 +1,6 @@
+## Fahad Fashion Hub
+![Home Screenshot](./src/assets/home-screenshot.png)
+
 🌟 Overview
 
 Fahad Fashion Hub is a modern and responsive e-commerce platform built with React and Vite, offering a seamless online shopping experience for fashion enthusiasts.
