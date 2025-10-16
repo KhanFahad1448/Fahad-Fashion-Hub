@@ -28,7 +28,7 @@ This project emphasizes real-time data management, secure authentication, and mo
 
 🧠 Tech Stack
 
-Frontend:
+## Frontend:
 
 React
 
@@ -38,23 +38,23 @@ Tailwind CSS
 
 Lucide Icons
 
-Backend / Database:
+## Backend / Database:
 
 Firebase Firestore
 
 Firebase Authentication
 
-Payment Integration:
+## Payment Integration:
 
 Razorpay
 
-Routing & State Management:
+## Routing & State Management:
 
 React Router
 
 React Context API
 
-Notifications:
+# Notifications:
 
 react-hot-toast
 
