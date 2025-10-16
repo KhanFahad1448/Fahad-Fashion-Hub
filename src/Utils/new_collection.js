@@ -30,7 +30,7 @@ let new_collections = [
       image2: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRUPVdICf3zSbh1ROeJf3uMuFXoMRCWmlFZTgn2hulez7e8OYBfmBAS4vBHTUGW1J0z9jhuICBJnbTkHMFwmsq958SwLpjZveLNMv5E",
       image3: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQRzIjQH0Tr9iBVepg3CYBvZGpcSPiYniYlOAzo1QJHxenfr3ks-JfIYpdSumyAGb_KcOsJPKH7cWv4WvamnwxrcQ8WYLqNcsVDb8epHw",
       new_price: 985.0,
-      old_price: 18120.5,
+      old_price: 1620.5,
     },
     {
       id: 4,
